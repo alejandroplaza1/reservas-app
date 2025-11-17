@@ -1,0 +1,48 @@
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver-db
+    environment:
+      SA_PASSWORD: "TuPasswordSegura123!"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sql_data:/var/opt/mssql
+    networks:
+      - reserva-net
+
+  backend:
+    build: 
+      context: ./reserva-espacios-backend
+      dockerfile: Dockerfile.backend
+    container_name: backend
+    depends_on:
+      - sqlserver
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Server=sqlserver;Database=ReservaEspacios;User Id=sa;Password=TuPasswordSegura123!;TrustServerCertificate=True;
+    ports:
+      - "5000:5000"
+    networks:
+      - reserva-net
+
+  frontend:
+    build:
+      context: ./reserva-espacios-front
+      dockerfile: Dockerfile.frontend
+    container_name: frontend
+    depends_on:
+      - backend
+    ports:
+      - "4200:80"
+    networks:
+      - reserva-net
+
+volumes:
+  sql_data:
+
+networks:
+  reserva-net:
+    driver: bridge

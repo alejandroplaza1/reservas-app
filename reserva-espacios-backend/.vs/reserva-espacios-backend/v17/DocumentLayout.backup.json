@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\alejandro.plazacolet\\Desktop\\reservas-app\\reserva-espacios-backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{806F5B32-DFCA-4A9C-9376-38740D07FADE}|ReservasApi\\ReservasApi.csproj|c:\\users\\alejandro.plazacolet\\desktop\\reservas-app\\reserva-espacios-backend\\reservasapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{806F5B32-DFCA-4A9C-9376-38740D07FADE}|ReservasApi\\ReservasApi.csproj|solutionrelative:reservasapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\alejandro.plazacolet\\Desktop\\reservas-app\\reserva-espacios-backend\\ReservasApi\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "ReservasApi\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\alejandro.plazacolet\\Desktop\\reservas-app\\reserva-espacios-backend\\ReservasApi\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "ReservasApi\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T12:16:23.006Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
