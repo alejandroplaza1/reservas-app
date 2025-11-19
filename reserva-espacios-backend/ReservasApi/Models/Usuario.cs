@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace ReservasApi.Models
@@ -14,20 +13,15 @@ namespace ReservasApi.Models
 
         [Required]
         [EmailAddress]
+        [StringLength(100)]
         public string Email { get; set; }
 
+        
         [Required]
-        public RolUsuario Rol { get; set; } = RolUsuario.Usuario;
+        [StringLength(100)]
+        public string Password { get; set; }
+        
 
-        public DateTime FechaRegistro { get; set; } = DateTime.UtcNow;
-
-        // Navigation property
         public ICollection<Reserva> Reservas { get; set; } = new List<Reserva>();
-    }
-
-    public enum RolUsuario
-    {
-        Admin,
-        Usuario
     }
 }

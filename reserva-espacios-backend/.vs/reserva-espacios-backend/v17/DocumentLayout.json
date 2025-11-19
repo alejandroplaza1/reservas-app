@@ -3,20 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\alejandro.plazacolet\\Desktop\\reservas-app\\reserva-espacios-backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{806F5B32-DFCA-4A9C-9376-38740D07FADE}|ReservasApi\\ReservasApi.csproj|c:\\users\\alejandro.plazacolet\\desktop\\reservas-app\\reserva-espacios-backend\\reservasapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{806F5B32-DFCA-4A9C-9376-38740D07FADE}|ReservasApi\\ReservasApi.csproj|solutionrelative:reservasapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{806F5B32-DFCA-4A9C-9376-38740D07FADE}|ReservasApi\\ReservasApi.csproj|c:\\users\\alejandro.plazacolet\\desktop\\reservas-app\\reserva-espacios-backend\\reservasapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{806F5B32-DFCA-4A9C-9376-38740D07FADE}|ReservasApi\\ReservasApi.csproj|solutionrelative:reservasapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{806F5B32-DFCA-4A9C-9376-38740D07FADE}|ReservasApi\\ReservasApi.csproj|c:\\users\\alejandro.plazacolet\\desktop\\reservas-app\\reserva-espacios-backend\\reservasapi\\models\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{806F5B32-DFCA-4A9C-9376-38740D07FADE}|ReservasApi\\ReservasApi.csproj|solutionrelative:reservasapi\\models\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{806F5B32-DFCA-4A9C-9376-38740D07FADE}|ReservasApi\\ReservasApi.csproj|c:\\users\\alejandro.plazacolet\\desktop\\reservas-app\\reserva-espacios-backend\\reservasapi\\controllers\\espacioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{806F5B32-DFCA-4A9C-9376-38740D07FADE}|ReservasApi\\ReservasApi.csproj|solutionrelative:reservasapi\\controllers\\espacioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{806F5B32-DFCA-4A9C-9376-38740D07FADE}|ReservasApi\\ReservasApi.csproj|c:\\users\\alejandro.plazacolet\\desktop\\reservas-app\\reserva-espacios-backend\\reservasapi\\data\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{806F5B32-DFCA-4A9C-9376-38740D07FADE}|ReservasApi\\ReservasApi.csproj|solutionrelative:reservasapi\\data\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{806F5B32-DFCA-4A9C-9376-38740D07FADE}|ReservasApi\\ReservasApi.csproj|c:\\users\\alejandro.plazacolet\\desktop\\reservas-app\\reserva-espacios-backend\\reservasapi\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{806F5B32-DFCA-4A9C-9376-38740D07FADE}|ReservasApi\\ReservasApi.csproj|solutionrelative:reservasapi\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{806F5B32-DFCA-4A9C-9376-38740D07FADE}|ReservasApi\\ReservasApi.csproj|c:\\users\\alejandro.plazacolet\\desktop\\reservas-app\\reserva-espacios-backend\\reservasapi\\controllers\\reservascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{806F5B32-DFCA-4A9C-9376-38740D07FADE}|ReservasApi\\ReservasApi.csproj|solutionrelative:reservasapi\\controllers\\reservascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{806F5B32-DFCA-4A9C-9376-38740D07FADE}|ReservasApi\\ReservasApi.csproj|c:\\users\\alejandro.plazacolet\\desktop\\reservas-app\\reserva-espacios-backend\\reservasapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{806F5B32-DFCA-4A9C-9376-38740D07FADE}|ReservasApi\\ReservasApi.csproj|solutionrelative:reservasapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{806F5B32-DFCA-4A9C-9376-38740D07FADE}|ReservasApi\\ReservasApi.csproj|c:\\users\\alejandro.plazacolet\\desktop\\reservas-app\\reserva-espacios-backend\\reservasapi\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{806F5B32-DFCA-4A9C-9376-38740D07FADE}|ReservasApi\\ReservasApi.csproj|solutionrelative:reservasapi\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{806F5B32-DFCA-4A9C-9376-38740D07FADE}|ReservasApi\\ReservasApi.csproj|c:\\users\\alejandro.plazacolet\\desktop\\reservas-app\\reserva-espacios-backend\\reservasapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{806F5B32-DFCA-4A9C-9376-38740D07FADE}|ReservasApi\\ReservasApi.csproj|solutionrelative:reservasapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{806F5B32-DFCA-4A9C-9376-38740D07FADE}|ReservasApi\\ReservasApi.csproj|c:\\users\\alejandro.plazacolet\\desktop\\reservas-app\\reserva-espacios-backend\\reservasapi\\models\\espacio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{806F5B32-DFCA-4A9C-9376-38740D07FADE}|ReservasApi\\ReservasApi.csproj|solutionrelative:reservasapi\\models\\espacio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{806F5B32-DFCA-4A9C-9376-38740D07FADE}|ReservasApi\\ReservasApi.csproj|c:\\users\\alejandro.plazacolet\\desktop\\reservas-app\\reserva-espacios-backend\\reservasapi\\data\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{806F5B32-DFCA-4A9C-9376-38740D07FADE}|ReservasApi\\ReservasApi.csproj|solutionrelative:reservasapi\\data\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{806F5B32-DFCA-4A9C-9376-38740D07FADE}|ReservasApi\\ReservasApi.csproj|c:\\users\\alejandro.plazacolet\\desktop\\reservas-app\\reserva-espacios-backend\\reservasapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{806F5B32-DFCA-4A9C-9376-38740D07FADE}|ReservasApi\\ReservasApi.csproj|solutionrelative:reservasapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{806F5B32-DFCA-4A9C-9376-38740D07FADE}|ReservasApi\\ReservasApi.csproj|c:\\users\\alejandro.plazacolet\\desktop\\reservas-app\\reserva-espacios-backend\\reservasapi\\models\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{806F5B32-DFCA-4A9C-9376-38740D07FADE}|ReservasApi\\ReservasApi.csproj|solutionrelative:reservasapi\\models\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{806F5B32-DFCA-4A9C-9376-38740D07FADE}|ReservasApi\\ReservasApi.csproj|c:\\users\\alejandro.plazacolet\\desktop\\reservas-app\\reserva-espacios-backend\\reservasapi\\reservasapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -30,37 +58,95 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EspaciosController.cs",
+              "DocumentMoniker": "C:\\Users\\alejandro.plazacolet\\Desktop\\reservas-app\\reserva-espacios-backend\\ReservasApi\\Controllers\\EspaciosController.cs",
+              "RelativeDocumentMoniker": "ReservasApi\\Controllers\\EspaciosController.cs",
+              "ToolTip": "C:\\Users\\alejandro.plazacolet\\Desktop\\reservas-app\\reserva-espacios-backend\\ReservasApi\\Controllers\\EspaciosController.cs",
+              "RelativeToolTip": "ReservasApi\\Controllers\\EspaciosController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA4wBwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T14:30:18.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\alejandro.plazacolet\\Desktop\\reservas-app\\reserva-espacios-backend\\ReservasApi\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "ReservasApi\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\alejandro.plazacolet\\Desktop\\reservas-app\\reserva-espacios-backend\\ReservasApi\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "ReservasApi\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T13:58:34.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\alejandro.plazacolet\\Desktop\\reservas-app\\reserva-espacios-backend\\ReservasApi\\Data\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "ReservasApi\\Data\\DbInitializer.cs",
+              "ToolTip": "C:\\Users\\alejandro.plazacolet\\Desktop\\reservas-app\\reserva-espacios-backend\\ReservasApi\\Data\\DbInitializer.cs",
+              "RelativeToolTip": "ReservasApi\\Data\\DbInitializer.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwB0AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T13:50:36.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ReservasController.cs",
+              "DocumentMoniker": "C:\\Users\\alejandro.plazacolet\\Desktop\\reservas-app\\reserva-espacios-backend\\ReservasApi\\Controllers\\ReservasController.cs",
+              "RelativeDocumentMoniker": "ReservasApi\\Controllers\\ReservasController.cs",
+              "ToolTip": "C:\\Users\\alejandro.plazacolet\\Desktop\\reservas-app\\reserva-espacios-backend\\ReservasApi\\Controllers\\ReservasController.cs",
+              "RelativeToolTip": "ReservasApi\\Controllers\\ReservasController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA1wDUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T13:00:25.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\alejandro.plazacolet\\Desktop\\reservas-app\\reserva-espacios-backend\\ReservasApi\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "ReservasApi\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\alejandro.plazacolet\\Desktop\\reservas-app\\reserva-espacios-backend\\ReservasApi\\Models\\Usuario.cs",
+              "RelativeToolTip": "ReservasApi\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T15:08:11.168Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "AppDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\alejandro.plazacolet\\Desktop\\reservas-app\\reserva-espacios-backend\\ReservasApi\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "ReservasApi\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\alejandro.plazacolet\\Desktop\\reservas-app\\reserva-espacios-backend\\ReservasApi\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeToolTip": "ReservasApi\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T12:27:49.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "DbContext.cs",
               "DocumentMoniker": "C:\\Users\\alejandro.plazacolet\\Desktop\\reservas-app\\reserva-espacios-backend\\ReservasApi\\Data\\DbContext.cs",
               "RelativeDocumentMoniker": "ReservasApi\\Data\\DbContext.cs",
               "ToolTip": "C:\\Users\\alejandro.plazacolet\\Desktop\\reservas-app\\reserva-espacios-backend\\ReservasApi\\Data\\DbContext.cs",
               "RelativeToolTip": "ReservasApi\\Data\\DbContext.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAkwC4AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T15:45:16.491Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T15:45:16.491Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Reserva.cs",
-              "DocumentMoniker": "C:\\Users\\alejandro.plazacolet\\Desktop\\reservas-app\\reserva-espacios-backend\\ReservasApi\\Models\\Reserva.cs",
-              "RelativeDocumentMoniker": "ReservasApi\\Models\\Reserva.cs",
-              "ToolTip": "C:\\Users\\alejandro.plazacolet\\Desktop\\reservas-app\\reserva-espacios-backend\\ReservasApi\\Models\\Reserva.cs",
-              "RelativeToolTip": "ReservasApi\\Models\\Reserva.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAA7wCcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T15:09:55.347Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "Espacio.cs",
               "DocumentMoniker": "C:\\Users\\alejandro.plazacolet\\Desktop\\reservas-app\\reserva-espacios-backend\\ReservasApi\\Models\\Espacio.cs",
               "RelativeDocumentMoniker": "ReservasApi\\Models\\Espacio.cs",
@@ -68,34 +154,56 @@
               "RelativeToolTip": "ReservasApi\\Models\\Espacio.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T15:08:58.887Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T15:08:58.887Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\alejandro.plazacolet\\Desktop\\reservas-app\\reserva-espacios-backend\\ReservasApi\\Models\\Usuario.cs",
-              "RelativeDocumentMoniker": "ReservasApi\\Models\\Usuario.cs",
-              "ToolTip": "C:\\Users\\alejandro.plazacolet\\Desktop\\reservas-app\\reserva-espacios-backend\\ReservasApi\\Models\\Usuario.cs",
-              "RelativeToolTip": "ReservasApi\\Models\\Usuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\alejandro.plazacolet\\Desktop\\reservas-app\\reserva-espacios-backend\\ReservasApi\\Program.cs",
+              "RelativeDocumentMoniker": "ReservasApi\\Program.cs",
+              "ToolTip": "C:\\Users\\alejandro.plazacolet\\Desktop\\reservas-app\\reserva-espacios-backend\\ReservasApi\\Program.cs",
+              "RelativeToolTip": "ReservasApi\\Program.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAADEAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T15:08:11.168Z",
+              "WhenOpened": "2025-11-19T10:36:24.345Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ReservasApi",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\alejandro.plazacolet\\Desktop\\reservas-app\\reserva-espacios-backend\\ReservasApi\\appsettings.json",
+              "RelativeDocumentMoniker": "ReservasApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\alejandro.plazacolet\\Desktop\\reservas-app\\reserva-espacios-backend\\ReservasApi\\appsettings.json",
+              "RelativeToolTip": "ReservasApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-19T11:08:50.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Reserva.cs",
+              "DocumentMoniker": "C:\\Users\\alejandro.plazacolet\\Desktop\\reservas-app\\reserva-espacios-backend\\ReservasApi\\Models\\Reserva.cs",
+              "RelativeDocumentMoniker": "ReservasApi\\Models\\Reserva.cs",
+              "ToolTip": "C:\\Users\\alejandro.plazacolet\\Desktop\\reservas-app\\reserva-espacios-backend\\ReservasApi\\Models\\Reserva.cs",
+              "RelativeToolTip": "ReservasApi\\Models\\Reserva.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAkwCcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T15:09:55.347Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ReservasApi.csproj",
               "DocumentMoniker": "C:\\Users\\alejandro.plazacolet\\Desktop\\reservas-app\\reserva-espacios-backend\\ReservasApi\\ReservasApi.csproj",
               "RelativeDocumentMoniker": "ReservasApi\\ReservasApi.csproj",
               "ToolTip": "C:\\Users\\alejandro.plazacolet\\Desktop\\reservas-app\\reserva-espacios-backend\\ReservasApi\\ReservasApi.csproj",
               "RelativeToolTip": "ReservasApi\\ReservasApi.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-18T14:38:50.485Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T14:38:50.485Z"
             }
           ]
         }
