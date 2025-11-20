@@ -32,7 +32,6 @@
     <Folder Include="Messaging\" />
     <Folder Include="Tests\" />
     <Folder Include="Repositories\" />
-    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>

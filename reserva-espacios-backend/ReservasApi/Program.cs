@@ -1,12 +1,24 @@
 using Microsoft.EntityFrameworkCore;
-using ReservasApi.Data; // <--- IMPORTANTE: Coincide con DbContext.cs
+using ReservasApi.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // 1. Configurar la conexión a Base de Datos
-// (Asegúrate de que la ConnectionString "DefaultConnection" existe en tu appsettings.json)
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// --- NUEVO: Configurar CORS ---
+// Definimos una política llamada "AllowAngular" (o el nombre que prefieras)
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAngular", policy =>
+    {
+        policy.WithOrigins("http://localhost:4200") // La URL de tu Frontend en el navegador
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
+// -----------------------------
 
 // 2. Añadir controladores y Swagger
 builder.Services.AddControllers();
@@ -16,16 +28,13 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 // 3. Ejecutar el inicializador de datos (Seed Data)
-// Usamos un scope para obtener el servicio de base de datos
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
     try
     {
         var context = services.GetRequiredService<AppDbContext>();
-        // Crea la BD si no existe
         context.Database.EnsureCreated();
-        // Aquí puedes llamar a tu DbInitializer si lo tienes:
         // DbInitializer.Initialize(context); 
     }
     catch (Exception ex)
@@ -42,7 +51,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-// app.UseHttpsRedirection(); // Comentado a veces para evitar problemas con Docker local
+// app.UseHttpsRedirection();
+
+//activar el cors
+app.UseCors("AllowAngular");
+
 app.UseAuthorization();
 
 app.MapControllers();
