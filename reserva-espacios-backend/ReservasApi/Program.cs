@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using ReservasApi.Data;
+using ReservasApi.Services; // <--- 1. IMPORTANTE: Añade este using
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,26 +9,28 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // --- NUEVO: Configurar CORS ---
-// Definimos una política llamada "AllowAngular" (o el nombre que prefieras)
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAngular", policy =>
     {
-        policy.WithOrigins("http://localhost:4200") // La URL de tu Frontend en el navegador
+        policy.WithOrigins("http://localhost:4200")
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
 });
-// -----------------------------
 
-// 2. Añadir controladores y Swagger
+// Sin estas líneas, tus Controladores fallarán al arrancar
+builder.Services.AddScoped<IReservasService, ReservasService>();
+builder.Services.AddScoped<IAuthService, AuthService>();
+
+// 3. Añadir controladores y Swagger
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// 3. Ejecutar el inicializador de datos (Seed Data)
+// 4. Ejecutar el inicializador de datos (Seed Data)
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
@@ -44,7 +47,7 @@ using (var scope = app.Services.CreateScope())
     }
 }
 
-// 4. Configurar el pipeline HTTP
+// 5. Configurar el pipeline HTTP
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -53,7 +56,7 @@ if (app.Environment.IsDevelopment())
 
 // app.UseHttpsRedirection();
 
-//activar el cors
+// Activar el CORS
 app.UseCors("AllowAngular");
 
 app.UseAuthorization();

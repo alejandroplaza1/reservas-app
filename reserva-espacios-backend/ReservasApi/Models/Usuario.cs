@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace ReservasApi.Models
 {
@@ -16,11 +15,11 @@ namespace ReservasApi.Models
         [StringLength(100)]
         public string Email { get; set; }
 
-        
         [Required]
-        [StringLength(100)]
         public string Password { get; set; }
-        
+
+        [Required]
+        public string Rol { get; set; } = "Usuario";
 
         public ICollection<Reserva> Reservas { get; set; } = new List<Reserva>();
     }
