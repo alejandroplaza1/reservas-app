@@ -1,8 +1,6 @@
-C:\Users\alejandro.plazacolet\Desktop\reservas-app\reserva-espacios-backend\ReservasApi\bin\Debug\net8.0\xunit.abstractions.dll
 C:\Users\alejandro.plazacolet\Desktop\reservas-app\reserva-espacios-backend\ReservasApi\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\alejandro.plazacolet\Desktop\reservas-app\reserva-espacios-backend\ReservasApi\bin\Debug\net8.0\appsettings.json
 C:\Users\alejandro.plazacolet\Desktop\reservas-app\reserva-espacios-backend\ReservasApi\bin\Debug\net8.0\ReservasApi.staticwebassets.endpoints.json
-C:\Users\alejandro.plazacolet\Desktop\reservas-app\reserva-espacios-backend\ReservasApi\bin\Debug\net8.0\xunit.runner.visualstudio.testadapter.dll
 C:\Users\alejandro.plazacolet\Desktop\reservas-app\reserva-espacios-backend\ReservasApi\bin\Debug\net8.0\ReservasApi.exe
 C:\Users\alejandro.plazacolet\Desktop\reservas-app\reserva-espacios-backend\ReservasApi\bin\Debug\net8.0\ReservasApi.deps.json
 C:\Users\alejandro.plazacolet\Desktop\reservas-app\reserva-espacios-backend\ReservasApi\bin\Debug\net8.0\ReservasApi.runtimeconfig.json
@@ -52,9 +50,6 @@ C:\Users\alejandro.plazacolet\Desktop\reservas-app\reserva-espacios-backend\Rese
 C:\Users\alejandro.plazacolet\Desktop\reservas-app\reserva-espacios-backend\ReservasApi\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\alejandro.plazacolet\Desktop\reservas-app\reserva-espacios-backend\ReservasApi\bin\Debug\net8.0\System.Security.Permissions.dll
 C:\Users\alejandro.plazacolet\Desktop\reservas-app\reserva-espacios-backend\ReservasApi\bin\Debug\net8.0\System.Windows.Extensions.dll
-C:\Users\alejandro.plazacolet\Desktop\reservas-app\reserva-espacios-backend\ReservasApi\bin\Debug\net8.0\xunit.assert.dll
-C:\Users\alejandro.plazacolet\Desktop\reservas-app\reserva-espacios-backend\ReservasApi\bin\Debug\net8.0\xunit.core.dll
-C:\Users\alejandro.plazacolet\Desktop\reservas-app\reserva-espacios-backend\ReservasApi\bin\Debug\net8.0\xunit.execution.dotnet.dll
 C:\Users\alejandro.plazacolet\Desktop\reservas-app\reserva-espacios-backend\ReservasApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\alejandro.plazacolet\Desktop\reservas-app\reserva-espacios-backend\ReservasApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
 C:\Users\alejandro.plazacolet\Desktop\reservas-app\reserva-espacios-backend\ReservasApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
@@ -138,4 +133,3 @@ C:\Users\alejandro.plazacolet\Desktop\reservas-app\reserva-espacios-backend\Rese
 C:\Users\alejandro.plazacolet\Desktop\reservas-app\reserva-espacios-backend\ReservasApi\obj\Debug\net8.0\ReservasApi.pdb
 C:\Users\alejandro.plazacolet\Desktop\reservas-app\reserva-espacios-backend\ReservasApi\obj\Debug\net8.0\ReservasApi.genruntimeconfig.cache
 C:\Users\alejandro.plazacolet\Desktop\reservas-app\reserva-espacios-backend\ReservasApi\obj\Debug\net8.0\ref\ReservasApi.dll
-C:\Users\alejandro.plazacolet\Desktop\reservas-app\reserva-espacios-backend\ReservasApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

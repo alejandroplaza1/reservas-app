@@ -16,7 +16,7 @@ namespace ReservasApi.Data
         {
             base.OnModelCreating(modelBuilder);
 
-            // Configuraciones adicionales de relaciones (opcional pero recomendado)
+            // Configuraciones adicionales de relaciones 
             modelBuilder.Entity<Reserva>()
                 .HasOne(r => r.Usuario)
                 .WithMany(u => u.Reservas)

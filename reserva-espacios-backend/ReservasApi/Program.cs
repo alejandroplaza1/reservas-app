@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using ReservasApi.Data;
-using ReservasApi.Services; // <--- 1. IMPORTANTE: Añade este using
+using ReservasApi.Services; //
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// --- NUEVO: Configurar CORS ---
+//Configurar CORS
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAngular", policy =>
@@ -19,7 +19,7 @@ builder.Services.AddCors(options =>
     });
 });
 
-// Sin estas líneas, tus Controladores fallarán al arrancar
+// Sin estas líneas, los Controladores fallarán al arrancar
 builder.Services.AddScoped<IReservasService, ReservasService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 
