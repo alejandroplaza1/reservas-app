@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+  <div class="container">
+    <a class="navbar-router-link navbar-brand fw-bold" routerLink="/">
+      <i class="bi bi-calendar-check me-2"></i>ReservaEspacios
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/espacios" routerLinkActive="active">
+            <i class="bi bi-grid me-1"></i> Pistas
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/mis-reservas" routerLinkActive="active">
+            <i class="bi bi-list-check me-1"></i> Mis Reservas
+          </a>
+        </li>
+        <li class="nav-item ms-lg-3">
+          <a class="btn btn-outline-light btn-sm" routerLink="/login">
+            <i class="bi bi-box-arrow-in-right me-1"></i> Login
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

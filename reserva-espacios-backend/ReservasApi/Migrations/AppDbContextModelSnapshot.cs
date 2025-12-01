@@ -10,135 +10,192 @@ using ReservasApi.Data;
 
 namespace ReservasApi.Migrations
 {
+    // La anotación DbContext especifica el contexto de base de datos que utiliza este snapshot.
     [DbContext(typeof(AppDbContext))]
+    // La clase hereda de ModelSnapshot. EF Core utiliza esta clase para comparar 
+    // el estado actual del modelo con el último estado migrado.
     partial class AppDbContextModelSnapshot : ModelSnapshot
     {
+        // Este método contiene la lógica para construir y configurar el modelo de la base de datos.
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
+            // Directivas de compilador para suprimir advertencias de código obsoleto o en desuso.
 #pragma warning disable 612, 618
             modelBuilder
+                // Establece la versión del producto Entity Framework Core utilizada (por ejemplo, 8.0.5).
                 .HasAnnotation("ProductVersion", "8.0.5")
+                // Configuración de SQL Server para la longitud máxima de identificadores (nombres de tablas/columnas).
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
+            // Configura SQL Server para usar columnas de identidad (auto-incremento) por defecto.
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            // 1. Configuración de la entidad Espacio (ReservasApi.Models.Espacio)
             modelBuilder.Entity("ReservasApi.Models.Espacio", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+            {
+                // Define la columna 'Id' como clave primaria.
+                b.Property<int>("Id")
+                    // Indica que el valor de 'Id' se genera al añadir (auto-incremento).
+                    .ValueGeneratedOnAdd()
+                    // Mapea a un tipo entero en la base de datos.
+                    .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                // Configuración específica de SQL Server para el auto-incremento de la columna 'Id'.
+                SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("Capacidad")
-                        .HasColumnType("int");
+                // Mapeo de la propiedad 'Capacidad' al tipo 'int' de SQL.
+                b.Property<int>("Capacidad")
+                    .HasColumnType("int");
 
-                    b.Property<string>("Descripcion")
-                        .IsRequired()
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
+                // Mapeo de la propiedad 'Descripcion'.
+                b.Property<string>("Descripcion")
+                    // Marca la columna como NO NULA (IsRequired).
+                    .IsRequired()
+                    // Define la longitud máxima del campo (250 caracteres).
+                    .HasMaxLength(250)
+                    // Mapea a un tipo nvarchar(250) en SQL.
+                    .HasColumnType("nvarchar(250)");
 
-                    b.Property<bool>("Disponible")
-                        .HasColumnType("bit");
+                // Mapeo de la propiedad 'Disponible' al tipo 'bit' (booleano) de SQL.
+                b.Property<bool>("Disponible")
+                    .HasColumnType("bit");
 
-                    b.Property<string>("Nombre")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                // Mapeo de la propiedad 'Nombre'.
+                b.Property<string>("Nombre")
+                    .IsRequired()
+                    .HasMaxLength(100)
+                    .HasColumnType("nvarchar(100)");
 
-                    b.HasKey("Id");
+                // Define formalmente la clave primaria (PK) de la entidad.
+                b.HasKey("Id");
 
-                    b.ToTable("Espacios");
-                });
+                // Mapea la entidad a la tabla llamada "Espacios" en la base de datos.
+                b.ToTable("Espacios");
+            });
 
+            // 2. Configuración de la entidad Reserva (ReservasApi.Models.Reserva)
             modelBuilder.Entity("ReservasApi.Models.Reserva", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+            {
+                // Configuración de la clave primaria 'Id' y auto-incremento, similar a 'Espacio'.
+                b.Property<int>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("EspacioId")
-                        .HasColumnType("int");
+                // Mapeo de la clave foránea 'EspacioId'.
+                b.Property<int>("EspacioId")
+                    .HasColumnType("int");
 
-                    b.Property<int>("Estado")
-                        .HasColumnType("int");
+                // Mapeo de la propiedad 'Estado' (probablemente un Enum).
+                b.Property<int>("Estado")
+                    .HasColumnType("int");
 
-                    b.Property<DateTime>("FechaFin")
-                        .HasColumnType("datetime2");
+                // Mapeo de las propiedades de fecha y hora.
+                b.Property<DateTime>("FechaFin")
+                    .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("FechaInicio")
-                        .HasColumnType("datetime2");
+                b.Property<DateTime>("FechaInicio")
+                    .HasColumnType("datetime2");
 
-                    b.Property<int>("UsuarioId")
-                        .HasColumnType("int");
+                // Mapeo de la clave foránea 'UsuarioId'.
+                b.Property<int>("UsuarioId")
+                    .HasColumnType("int");
 
-                    b.HasKey("Id");
+                // Define formalmente la clave primaria (PK) de la entidad.
+                b.HasKey("Id");
 
-                    b.HasIndex("EspacioId");
+                // Crea un índice en la columna 'EspacioId' para búsquedas rápidas (optimización).
+                b.HasIndex("EspacioId");
 
-                    b.HasIndex("UsuarioId");
+                // Crea un índice en la columna 'UsuarioId' para búsquedas rápidas (optimización).
+                b.HasIndex("UsuarioId");
 
-                    b.ToTable("Reservas");
-                });
+                // Mapea la entidad a la tabla llamada "Reservas" en la base de datos.
+                b.ToTable("Reservas");
+            });
 
+            // 3. Configuración de la entidad Usuario (ReservasApi.Models.Usuario)
             modelBuilder.Entity("ReservasApi.Models.Usuario", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+            {
+                // Configuración de la clave primaria 'Id' y auto-incremento.
+                b.Property<int>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                // Mapeo de la propiedad 'Email'. Se mapea a nvarchar(max) debido a la ausencia de MaxLength.
+                b.Property<string>("Email")
+                    .IsRequired()
+                    .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("FechaRegistro")
-                        .HasColumnType("datetime2");
+                // Mapeo de la propiedad 'FechaRegistro'.
+                b.Property<DateTime>("FechaRegistro")
+                    .HasColumnType("datetime2");
 
-                    b.Property<string>("Nombre")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                // Mapeo de la propiedad 'Nombre'.
+                b.Property<string>("Nombre")
+                    .IsRequired()
+                    .HasMaxLength(100)
+                    .HasColumnType("nvarchar(100)");
 
-                    b.Property<int>("Rol")
-                        .HasColumnType("int");
+                // Mapeo de la propiedad 'Rol' (probablemente un Enum).
+                b.Property<int>("Rol")
+                    .HasColumnType("int");
 
-                    b.HasKey("Id");
+                // Define formalmente la clave primaria (PK) de la entidad.
+                b.HasKey("Id");
 
-                    b.ToTable("Usuarios");
-                });
+                // Mapea la entidad a la tabla llamada "Usuarios" en la base de datos.
+                b.ToTable("Usuarios");
+            });
 
+            // 4. Configuración de las relaciones (Claves Foráneas) en Reserva
             modelBuilder.Entity("ReservasApi.Models.Reserva", b =>
-                {
-                    b.HasOne("ReservasApi.Models.Espacio", "Espacio")
-                        .WithMany("Reservas")
-                        .HasForeignKey("EspacioId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+            {
+                // Define la relación: Una Reserva (Reserva) tiene UN Espacio (HasOne).
+                b.HasOne("ReservasApi.Models.Espacio", "Espacio")
+                    // Y un Espacio tiene MÚCHAS Reservas (WithMany).
+                    .WithMany("Reservas")
+                    // La clave foránea es 'EspacioId'.
+                    .HasForeignKey("EspacioId")
+                    // Si el Espacio se elimina, las Reservas asociadas también se eliminan (Comportamiento Cascade).
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .IsRequired(); // La clave foránea es obligatoria (NO NULA).
 
-                    b.HasOne("ReservasApi.Models.Usuario", "Usuario")
-                        .WithMany("Reservas")
-                        .HasForeignKey("UsuarioId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                // Define la relación: Una Reserva tiene UN Usuario (HasOne).
+                b.HasOne("ReservasApi.Models.Usuario", "Usuario")
+                    // Y un Usuario tiene MÚCHAS Reservas (WithMany).
+                    .WithMany("Reservas")
+                    // La clave foránea es 'UsuarioId'.
+                    .HasForeignKey("UsuarioId")
+                    // Si el Usuario se elimina, las Reservas asociadas también se eliminan (Comportamiento Cascade).
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .IsRequired();
 
-                    b.Navigation("Espacio");
+                // Propiedades de navegación: permite a la entidad Reserva acceder a las entidades Espacio y Usuario.
+                b.Navigation("Espacio");
 
-                    b.Navigation("Usuario");
-                });
+                b.Navigation("Usuario");
+            });
 
+            // 5. Configuración de las propiedades de navegación inversa
+
+            // Define la propiedad de navegación 'Reservas' en la entidad Espacio 
+            // (la colección de Reservas relacionadas con un Espacio).
             modelBuilder.Entity("ReservasApi.Models.Espacio", b =>
-                {
-                    b.Navigation("Reservas");
-                });
+            {
+                b.Navigation("Reservas");
+            });
 
+            // Define la propiedad de navegación 'Reservas' en la entidad Usuario
+            // (la colección de Reservas relacionadas con un Usuario).
             modelBuilder.Entity("ReservasApi.Models.Usuario", b =>
-                {
-                    b.Navigation("Reservas");
-                });
+            {
+                b.Navigation("Reservas");
+            });
+            // Fin de las directivas de compilador.
 #pragma warning restore 612, 618
         }
     }
